@@ -49,9 +49,15 @@ class DataExtractor:
         return list(set(re.findall(pattern, self.text)))
 
     def extract_credit_cards(self):
-        # Finds credit card numbers (16 digits with dashes or spaces)
+        # Finds credit card numbers and hides middle digits for safety
         pattern = r'\b(?:\d{4}[- ]?){3}\d{4}\b'
-        return list(set(re.findall(pattern, self.text)))
+        found = re.findall(pattern, self.text)
+        masked = []
+        for card in found:
+            # Keep only the last 4 digits visible
+            clean_card = card.replace("-", "").replace(" ", "")
+            masked.append("****-****-****-" + clean_card[-4:])
+        return list(set(masked))
 
     def extract_time(self):
         # Finds time in 12-hour or 24-hour formats
@@ -59,8 +65,8 @@ class DataExtractor:
         return list(set(re.findall(pattern, self.text)))
 
     def extract_currency(self):
-        # Finds Rwandan currency (Rwf followed by numbers)
-        pattern = r'Rwf\s?\d{1,3}(?:,\d{3})*(?:\.\d{2})?'
+        # Finds Rwandan currency (Rwf followed by numbers with or without commas)
+        pattern = r'Rwf\s?\d+(?:,\d{3})*(?:\.\d{2})?'
         return list(set(re.findall(pattern, self.text)))
 
 if __name__ == "__main__":
@@ -82,7 +88,6 @@ if __name__ == "__main__":
             print("Goodbye!")
             break
 
-        # Map choices to labels and functions
         menu = {
             "1": ("URLs", "extract_urls"),
             "2": ("Emails", "extract_emails"),
@@ -101,7 +106,11 @@ if __name__ == "__main__":
             if use_sample == "yes":
                 text = sample_text
             else:
-                text = input("\nEnter the text you want to search:\n")
+                text = input("\nEnter the text you want to search: ")
+
+            if not text.strip():
+                print("Error: No text provided.")
+                continue
 
             extractor = DataExtractor(text)
             
@@ -110,10 +119,9 @@ if __name__ == "__main__":
             if safe_text is None:
                 continue
             
-            # Re-update extractor text with safe version
             extractor.text = safe_text
             
-            # Get the results from the chosen function
+            # Run the extraction
             extract_func = getattr(extractor, func_name)
             results = extract_func()
 
