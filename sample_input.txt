@@ -1,30 +1,7 @@
 Hello,
-
-Here are the details for the upcoming meeting and some vendor info.
-
-You can contact our team members at:
-- Ngabonziza: ngabonziza@example.rw
-- Rugwiro: rugwiro.work@company.com
-- Nshuti: nshuti.official@dev.org
-
-Please visit these official websites for more information:
-1. Visit https://www.apple.com 
-2. https://www.igihe.com 
-3. https://mail.google.com
-
-The total budget for this project is Rwf 1,500,000. We already paid an initial deposit of Rwf 500,000 at 10:30 AM. The next payment of Rwf 250,500 is due by 4:00 PM tomorrow.
-
-If you have any issues, call our support line at (250) 788-123456 or 078-123-4567.
-
-Security note: 
-Someone sent a suspicious link: https://malicious-site.com/exploit?id=<script>alert('hack')</script>
-We should also watch out for long inputs like:
-"B" * 6000
-
-Thanks!
-Rwf 20,000
-12:45
-09:00 PM
-ngabonziza+test@gmail.com
-nshuti@africa.rw
-https://www.apple.com/rw
+Please visit https://www.apple.com, https://www.igihe.com or https://mail.google.com for more info.
+You can contact our team: ngabonziza@example.rw, rugwiro.work@company.com, or nshuti.official@dev.org.
+Our support lines are (250) 788-123456 and 078-123-4567.
+For payments, use credit card 1234-5678-9012-3456.
+The total cost is Rwf 1,500,000. We already paid Rwf 500,000 at 10:30 AM.
+The next meeting is at 14:30 or 4:00 PM.
