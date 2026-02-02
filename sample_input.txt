@@ -1,0 +1,23 @@
+Dear Team,
+
+Please find the summary of our recent expenditures and contact details for the new vendors.
+
+For inquiries, contact Sarah at sarah.johnson@tech-solutions.co.uk or reach out to the support line at (555) 123-4567. Alternatively, you can visit their portal at https://support.tech-solutions.co.uk/login.
+
+The last invoice was for $1,250.50, which was paid on 2026-01-15 at 14:30. Another smaller fee of $45.00 is due by tomorrow morning, specifically around 9:15 AM.
+
+We also received a strange message that we should probably ignore:
+"Hello! Visit http://malicious-site.com/exploit?id=<script>alert('XSS')</script> for a prize!"
+Wait, that looks unsafe. Let's also check this phone number: 123.456.7890.
+
+Vendor 2: Mike (mike.r@dev-hub.org). Phone: 987-654-3210. Website: http://dev-hub.org/portal/index.php?user=123.
+
+Note: Some systems might try to send long strings to crash us, like:
+A" * 5000 
+
+Make sure the regex handles these variations!
+$19.99
+23:59
+11:59 PM
+john.doe+extra@gmail.com
+www.example.com (no protocol, should we catch this? Let's stick to full URLs for now as per plan).
