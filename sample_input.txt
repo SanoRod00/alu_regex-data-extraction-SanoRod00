@@ -1,23 +1,30 @@
-Dear Team,
+Hello,
 
-Please find the summary of our recent expenditures and contact details for the new vendors.
+Here are the details for the upcoming meeting and some vendor info.
 
-For inquiries, contact Sarah at sarah.johnson@tech-solutions.co.uk or reach out to the support line at (555) 123-4567. Alternatively, you can visit their portal at https://support.tech-solutions.co.uk/login.
+You can contact our team members at:
+- Ngabonziza: ngabonziza@example.rw
+- Rugwiro: rugwiro.work@company.com
+- Nshuti: nshuti.official@dev.org
 
-The last invoice was for $1,250.50, which was paid on 2026-01-15 at 14:30. Another smaller fee of $45.00 is due by tomorrow morning, specifically around 9:15 AM.
+Please visit these official websites for more information:
+1. Visit https://www.apple.com 
+2. https://www.igihe.com 
+3. https://mail.google.com
 
-We also received a strange message that we should probably ignore:
-"Hello! Visit http://malicious-site.com/exploit?id=<script>alert('XSS')</script> for a prize!"
-Wait, that looks unsafe. Let's also check this phone number: 123.456.7890.
+The total budget for this project is Rwf 1,500,000. We already paid an initial deposit of Rwf 500,000 at 10:30 AM. The next payment of Rwf 250,500 is due by 4:00 PM tomorrow.
 
-Vendor 2: Mike (mike.r@dev-hub.org). Phone: 987-654-3210. Website: http://dev-hub.org/portal/index.php?user=123.
+If you have any issues, call our support line at (250) 788-123456 or 078-123-4567.
 
-Note: Some systems might try to send long strings to crash us, like:
-A" * 5000 
+Security note: 
+Someone sent a suspicious link: https://malicious-site.com/exploit?id=<script>alert('hack')</script>
+We should also watch out for long inputs like:
+"B" * 6000
 
-Make sure the regex handles these variations!
-$19.99
-23:59
-11:59 PM
-john.doe+extra@gmail.com
-www.example.com (no protocol, should we catch this? Let's stick to full URLs for now as per plan).
+Thanks!
+Rwf 20,000
+12:45
+09:00 PM
+ngabonziza+test@gmail.com
+nshuti@africa.rw
+https://www.apple.com/rw
